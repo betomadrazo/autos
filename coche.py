@@ -31,7 +31,7 @@ pygame.display.set_caption('Car Racing')
 
 car_image = pygame.image.load('car.png')
 car_image = pygame.transform.scale(car_image,(CAR_WIDTH, CAR_HEIGHT))
-car_image = pygame.transform.rotate(car_image, 10)
+# car_image = pygame.transform.rotate(car_image, 10)
 
 # Set up the car position and speed
 car_x = (WINDOW_WIDTH // 2) - (CAR_WIDTH // 2) - 10
@@ -86,10 +86,10 @@ while True:
                 move += 3
             if event.key == pygame.K_LEFT:
                 car_speed = -SPEED
-                car_image = rotate_car(car_image, LEFT)
+                # car_image = rotate_car(car_image, LEFT)
             elif event.key == pygame.K_RIGHT:
                 car_speed = SPEED
-                car_image = rotate_car(car_image, RIGHT)
+                # car_image = rotate_car(car_image, RIGHT)
 
         elif event.type == pygame.KEYUP:
             if event.key == pygame.K_SPACE:
