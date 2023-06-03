@@ -86,17 +86,17 @@ while True:
                 move += 3
             if event.key == pygame.K_LEFT:
                 car_speed = -SPEED
-            #    car_image = rotate_car(car_image, LEFT)
+                car_image = rotate_car(car_image, LEFT)
             elif event.key == pygame.K_RIGHT:
                 car_speed = SPEED
-                #car_image = rotate_car(car_image, RIGHT)
+                car_image = rotate_car(car_image, RIGHT)
 
         elif event.type == pygame.KEYUP:
             if event.key == pygame.K_SPACE:
                 move = 0
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 car_speed = 0
-                # car_image = rotate_car(car_image, CENTER)
+                car_image = rotate_car(car_image, CENTER)
 
         pressed_keys = pygame.key.get_pressed()
         if pressed_keys[pygame.K_SPACE]:
