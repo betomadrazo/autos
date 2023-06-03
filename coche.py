@@ -4,7 +4,7 @@ import sys
 pygame.init()
 
 #                   RED  GREEN  BLUE
-DARK_GRAY =         (30,   30,  30)
+DARK_GRAY =         (130,   130,  0)
 RED =               (255, 128,   0)
 GREEN =             (128,   0, 128)
 LINE_COLOR =        (255, 180,   0)
